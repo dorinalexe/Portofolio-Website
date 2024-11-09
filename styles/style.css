@@ -1,0 +1,133 @@
+body {
+    background-color: lightgray;
+    width: 100%;
+    min-width: 450px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    display: grid;
+    width: 100%;
+    height: 125px;
+    grid-template-areas: "a b";
+    grid-template-columns: 1fr 1fr;
+    position: fixed;
+    z-index: 1;
+    background-color: beige;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+}
+ 
+h1 {
+    grid-area: a;
+    align-self: center;
+    position: relative;
+    left: 20px;
+}
+
+#navItems {
+    grid-area: b;
+    list-style-type: none;
+    display: inline-flex;
+    justify-content: end;
+    align-items: center;
+    text-decoration: none;
+}
+
+#navItems a {
+    margin-right: 25px;
+    text-decoration: none;
+    color: black;
+}
+
+#prim {
+    width: 100%;
+    display: grid;
+    grid-template-areas: "text poze"
+                         "text poze";
+    grid-template-columns: 2fr 1fr;
+    margin-top: 125px;
+    position: relative;
+    
+}
+
+.about h2{
+    grid-area: text;
+    
+}
+
+.about article {
+    grid-area: text;
+}
+
+#titluri li:hover {
+    cursor: grab;
+}
+
+#photoOfMe, #funkoMe {
+    grid-area: poze;
+    width: 100%;
+    min-width: 200px;
+    max-width: 290px;
+    border-radius: 25px;
+    justify-self: flex-end;
+}
+
+#funkoMe {
+    position: relative;
+    top: -30px;
+    z-index: -1;
+    transition-duration: 1s;
+}
+
+#dubai, #porec, #gaziantep, #guadalajara, #zadar {
+    width: 0px;
+    border-radius: 25px;
+    transition-duration: 2s;
+}
+
+#surprise:hover {
+    cursor: help;
+}
+
+#pisici {
+    display: none;
+}
+
+#pozaPisici {
+    width:0px;
+    transition-duration: 2s;
+    border-radius: 25px;
+}
+
+#projects li {
+    list-style-type: "\1F44D";
+}
+
+#projects li:hover {
+    cursor: grab;
+}
+
+#skillsImg {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+#skills img {
+    width: 70px;
+    margin-left: 50px;
+    min-width:70px;
+    align-self: center;
+    justify-self: center;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    top: 100px;
+    text-align: center;
+    font-style: italic;
+}
