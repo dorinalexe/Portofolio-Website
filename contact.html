@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="./styles/contactstyle.css">
+</head>
+<body>
+    <header>
+        <h1>Dorin Alexe</h1>
+        <ul id="navItems">
+                <a href="./index.html"><li>About Me</li></a>
+                <a href="./index.html"><li>Projects</li></a>
+                <a href="./index.html"><li>Skills</li></a>
+                <a href="#prim"><li>Contact Me</li></a>
+        </ul>
+    </header>
+    
+    <main>
+        <div id="prim">
+            <h2>Contact Me</h2>
+            <p>Did you like what you've seen on this page and think we can work together?</p>
+            <p>Complete the following fields and I will contact you.</p>
+            <form action="./submission.html" method="post">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="fname" maxlength="32" pattern="[A-Za-z]{1-32}" placeholder="Insert Your First Name Here" required>
+                <br>
+                <br>
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname" maxlength="32" pattern="[A-Za-z]{1-32}" placeholder="Insert Your Last Name Here" required>
+                <br>
+                <br>
+                <label for="email">E-mail</label>
+                <input type="email" name="e-mail" id="email" attern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Insert Your E-mail Address Here" required>
+                <br>
+                <br>
+                <label for="reason">What do you have in mind?</label>
+                <br>
+                <textarea name="reason" id="reason" rows="10" cols="50" maxlength="300" placeholder="Write here your project ideas..." required></textarea>
+                <br>
+                <input type="submit" name="submit" id="submit">
+            </form>
+            <br>
+            <p>Or you can contact me directly here:</p>
+            <div id="imgcontact">
+                <a href="mailto: alexedorin4@gmail.com"><img src="./styles/images/email.png" alt="e-mail Logo"></a>
+                <a href="https://www.linkedin.com/in/dorin-alexe-3b37b8218"><img src="./styles/images/linkedin.png" alt="LinkedIn Logo"></a>
+                <a href="https://github.com/dorinalexe"><img src="./styles/images/github.png" alt="GitHub Logo"></a>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
